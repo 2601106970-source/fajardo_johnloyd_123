@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - John Loyd O. Fajardo</title>
+    <link rel="stylesheet" href="css.css"/>
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b0d0e;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Top Bar Actions */
+        .action-bar {
+            margin-bottom: 24px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #00e676;
+            color: #0b0d0e;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 15px rgba(0, 230, 118, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #ffffff;
+            border: 1px solid #334155;
+        }
+
+        .btn-secondary:hover {
+            background-color: #1e293b;
+        }
+
+        /* Resume Image Container */
+        #resume {
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #1e2428;
+        }
+
+        #resume img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Action Buttons -->
+    <div class="action-bar">
+        <a href="index.html" class="btn btn-secondary">&larr; Back to Portfolio</a>
+        <!-- Forces direct download of the image file -->
+        <a href="assets/FINALLLLL-NI-FRIENDS-HAHA.docx" class="btn-hero-secondary" target="_blank">Download Resume</a>
+    </div>
+
+    <!-- Resume Image Display -->
+    <section id="resume">
+        <img src="assets/Black and White Clean Professional A4 Resume.png" alt="John Loyd O. Fajardo Resume">
+    </section>
+
+</body>
+</html>
